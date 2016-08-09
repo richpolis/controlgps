@@ -1,0 +1,5 @@
+1. Instalar Phonegap
+2. Instalar nodeJS
+3. Instalar JDK
+4. Abrir Phonegap e importar el proyecto
+5. La aplicacion se encuentra dentro de la carpeta www
