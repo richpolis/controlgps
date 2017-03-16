@@ -1,0 +1,18 @@
+<ion-view view-title="CONTROL GPS">
+  <ion-content>
+    <ion-list>
+      <div class="item item-divider">
+        MATRICULAS
+      </div>
+      <ion-item ng-repeat="plate in plates" ng-click="showFormMatricula(plate)" class="item-icon-right">
+        <h2 ng-if="plate.enrollment!=null">{{plate.enrollment}}</h2>
+        <h2 ng-if="plate.enrollment==null">{{plate.licence}}</h2>
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+    <div class="title" ng-click="llamarSoporteTecnico()">Soporte Tecnico</div>
+  </div>
+</ion-view>
+

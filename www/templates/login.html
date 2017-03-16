@@ -1,0 +1,39 @@
+<ion-view hide-nav-bar="true" view-title="CONTROL GPS">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">CONTROL GPS</h1>
+    </ion-header-bar>
+    <ion-content id="login" class="has-header" style="background-color: #f9f9f9;">
+        <div ng-if="isIOS" class="padding-ios"></div>
+        <form name="loginForm" ng-submit="doLogin()" novalidate>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" id="login-username" name="username" ng-model="loginData.username" placeholder="Usuario" required >
+                </label>
+                <label class="item item-input">
+                    <input type="password" name="password" ng-model="loginData.password" placeholder="Contraseña" required >
+                </label>
+                <div class="">
+                    <ion-checkbox style="font-size: 12px; background-color: #f9f9f9;border-left: none; border-right: none; border-bottom: none;" ng-model="loginData.remember">Recordar contraseña</ion-checkbox>
+                </div>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-positive button-small login-button" type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+
+            <div class="padding">
+                <a class="button button-block button-clear button-positive button-small login-button" style="text-transform: none; text-decoration: underline; color: rgb(77, 77, 77);" ng-click="showFormRecuperar()">¿Olvidó su contraseña?</a>
+          </div>
+         <div class="padding">
+            <a class="button button-block button-clear button-positive button-small" style="color: rgb(0, 129, 234); font-weight: bold; text-transform: none; font-size:15px;" href="#" ng-click="llamarSoporteTecnico()">
+                <i class="icon ion-android-call"></i> Contratar servicio</a>    
+        </div> 
+        <div class="text-center">   
+            <div class="red-social hb-xms-margin" id="aFB" ng-click="openBrowser(services[0]);"><span class="hb hb-xms hb-facebook spin"><i class="icon {{services[0].icon}}"></i></span></div>
+            <div class="red-social hb-xms-margin" id="aTwitter" ng-click="openBrowser(services[1]);"><span class="hb hb-xms hb-twitter spin"><i class="icon {{services[1].icon}}"></i></span></div>
+            <div class="red-social hb-xms-margin" id="aYouTube" ng-click="openBrowser(services[2]);"><span class="hb hb-xms hb-youtube spin"><i class="icon {{services[2].icon}}"></i></span></div>    
+        </div>  
+         
+
+    </ion-content>
+</ion-view>

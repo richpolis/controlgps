@@ -1,0 +1,20 @@
+<ion-view view-title="CONTROL GPS">
+
+  <ion-content>
+    <ion-list>
+      <div class="item item-divider">
+        NOTICIAS
+      </div>
+      <ion-item ng-repeat="noticia in noticias" href="#/app/noticias/{{$index}}" class="item-icon-right" style="position:relative;">
+        <div class="noticia-marca noticia-{{noticia.type | lowercase}}"></div>
+        <p>{{noticia.created_at}}</p>
+        <h2>{{noticia.title}}</h2>
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+    <button class="button button-block button-positive icon-left ion-android-car gestionar-flota texto-mayusculas" ng-if="user.url && user.url.length > 0" ng-click="openBrowser(user.url);">Gestionar flota</button>
+    <div class="title texto-mayusculas" ng-click="llamarSoporteTecnico()">Soporte Tecnico</div>
+  </div>
+</ion-view>

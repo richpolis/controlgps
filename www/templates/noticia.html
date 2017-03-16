@@ -1,0 +1,23 @@
+<ion-view view-title="{{noticia.title}}">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="icon.png">
+        <h2>{{noticia.title}}</h2>
+        <p>{{noticia.created_at}}</p>
+      </div>
+
+      <div class="item item-body">
+        <p>
+          {{noticia.description}}
+        </p>
+        
+      </div>
+
+    </div>
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+    <div class="title texto-mayusculas" ng-click="llamarSoporteTecnico()">Soporte Tecnico</div>
+  </div>
+</ion-view>

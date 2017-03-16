@@ -1,0 +1,23 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-light" style="background-color: #f9f9f9; border: none;">
+    <h1 class="title"></h1>
+    <div class="buttons">
+      <button class="button button-positive button-clear" ng-click="closeFormRecuperar()">
+        <i class="icon ion-close-round"></i>
+      </button>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background-color: #f9f9f9;margin-bottom: 20px;" class="padding">
+    <form ng-submit="doRecuperar()">
+      <h4 class="text-center">
+        Recuperar contraseña    
+      </h4>  
+      <label class="item item-input" style="margin-bottom: 20px;">
+            <input type="text" ng-model="recuperarData.email" placeholder="Favor de ingresar email" />
+        </label>
+        <label>
+          <button class="button button-block button-positive button-small" type="submit">Enviar</button>
+        </label>
+    </form>
+  </ion-content>
+</ion-modal-view>

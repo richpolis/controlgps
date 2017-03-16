@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-light" style="background-color: #f9f9f9; border: none;">
+    <h1 class="title"></h1>
+    <div class="buttons">
+      <button class="button button-positive button-clear" ng-click="closeFormVideo()">
+        <i class="icon ion-close-round"></i>
+      </button>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background-color: #f9f9f9;margin-bottom: 20px;" class="padding">
+    <h4 class="text-center">
+        {{videoActual.name}}
+    </h4>
+    <div class="video-container">
+        <iframe src="{{videoActual.link_youtube | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="text-center">
+        {{videoActual.description}}
+    </p>  
+  </ion-content>
+</ion-modal-view>

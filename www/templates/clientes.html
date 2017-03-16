@@ -1,0 +1,20 @@
+<ion-view view-title="CONTROL GPS">
+  <ion-content>
+    <ion-list>
+      <div class="item item-divider">
+        CLIENTES
+      </div>
+      <label class="item item-input">
+        <input type="text" ng-model="buscarCliente" id="buscar" placeholder="Buscar cliente">
+      </label>
+      <ion-item ng-repeat="cliente in clients | filter:buscarCliente" ng-click="viewCliente(cliente)" class="item-icon-right">
+        <h2>{{cliente.username}}</h2>
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-stable">
+    <div class="title" ng-click="llamarSoporteTecnico()">Soporte Tecnico</div>
+  </div>
+</ion-view>
+

@@ -1,0 +1,107 @@
+/* Empty. Add your own CSS if you like */
+
+.list .item .noticia-marca{
+    content: '';
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+}
+
+.list .item .noticia-verde{
+    border-left: 4px solid rgb(63, 186, 155);
+
+}
+
+.list .item .noticia-rojo{
+    border-left: 4px solid #ED5565;
+}
+
+.list .item .noticia-blanco{
+    border-left: 4px solid #F5F7FA;
+}
+
+.bar-footer .gestionar-flota{
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    width: 100%;
+}
+
+.ion-side-menu-controlgps{
+    background-color: #424242; 
+    border-right: 1px solid #083665;
+}
+
+.ion-side-menu-controlgps .item-dark{
+    background-color: #424242; 
+}
+
+.ion-side-menu-controlgps .item-dark-controlgps{
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ion-side-menu-controlgps .item-dark-controlgps .item-complex .item-content{
+    padding: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+  
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hb-xms {
+	line-height: 18.5px;
+	font-size: 27.5px;
+	margin: 18.5px 0px;
+	/* Original output, margin 0 of the button */
+	/*margin: 33.5px 15px;*/
+	/* New output, margin 15px of the button,  9.5 + 15 = 24.5 */
+}
+.hb-xms,
+.hb-xms:before,
+.hb-xms:after {
+	height: 29.5px;
+	width: 51px;
+}
+.hb-xms-margin {
+	margin: 15px;
+}
+.hb-xms-margin {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.loading-container .loading {
+    background-color: white;
+    color: black;
+
+    width: 50% !important;
+    border-width: 1px !important;
+    border-color: black !important;
+    border-style: solid !important;
+}
+
+.texto-mayusculas{
+    text-transform: uppercase;
+}
+
+.red-social{
+    display: inline-block;
+    vertical-align: 
+}
