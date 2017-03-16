@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'; img-src 'self' data:">
+        <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/flat-checkbox/style.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/alertifyjs/css/alertify.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/alertifyjs/css/themes/default.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/jquery.mobile/jquery.mobile-v1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/bootflat/css/bootflat.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/social-hexagon/css/hexagons.min.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/social-hexagon/css/page-style.css" />
+        <link rel="stylesheet" type="text/css" href="plugins/sidebar/sidebar.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>ControlGPS</title>
+    </head>
+    <body>
+        
+        <div style="padding-bottom: 30px; min-height: 450px; width: 100%; height: 100%; background: transparent url(&quot;img/logo_gps.png&quot;) no-repeat scroll center center;" class="ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" tabindex="0" data-url="/Controlgps/Controlgps/www/" data-role="page" data-quicklinks="true" id="pag1">
+
+            <div role="main" class="ui-content jqm-content jqm-fullwidth"></div>
+            <!-- /content -->
+
+            <div style="background: rgb(249, 249, 249) none repeat scroll 0% 0%; border: 0px none; text-transform: none;" class="ui-footer ui-bar-inherit ui-footer-fixed slideup" role="contentinfo" data-role="footer" data-position="fixed">
+                <div style="font-size: 14px; padding: 20px;" class="text-left">
+                    Versión 1.0
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /page -->
+
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="pag2" style="display: none;" data-page-id="login">
+
+            <div data-role="header">
+                <div class="text-center" style="font-size: 17px; font-family: 'Open Sans','Helvetica Neue','Helvetica,Arial,sans-serif' !important;">
+                    <span style="color: white; text-shadow: 0px 1px 0px rgb(1, 82, 162);">CONTROL</span> <span style="color: white; text-shadow: 0px 1px 0px rgb(1, 82, 162);">GPS</span>
+                </div>
+            </div>
+            <!-- /header -->
+
+            <div role="main" class="ui-content" style="padding-left: 2.5em; padding-right: 2.5em;">
+                <div class="form-horizontal" style="margin-top: 11px;">
+                    <input id="username" class="form-control" placeholder="Usuario" type="text" style="color: rgb(38, 147, 236);">
+                    <input id="password" class="form-control" placeholder="Contraseña" type="password" style="margin-top: -1px; color: rgb(38, 147, 236);">
+
+                    <div style="margin-top: 17px; text-transform: none; margin-bottom: 14px;" class="pull-right">
+                        <input name="checkboxG4" id="checkRememberPassword" class="css-checkbox" type="checkbox">
+                        <label for="checkRememberPassword" class="css-label" style="font-size: 14px;"> Recordar contraseña</label>
+                    </div>
+
+                    <button id="btnLogin" type="button" class="btn btn-primary btn-block" style="margin-top: 20px;">INICIAR SESION</button>
+                    <div class="text-center" style="margin-top: 30px;">
+                        <a id="btnRecoverPassword" style="text-transform: none; text-decoration: underline; color: rgb(77, 77, 77);" href="javascript: void(0)" data-toggle="modal" data-target="#modalRecoverPassword">¿Olvidó su contraseña?</a>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="text-center">
+                    <div>
+                        <a id="btnHireService" style="color: rgb(0, 129, 234); font-weight: bold; text-transform: none; font-size:15px;" href="#"><i style="padding-left: 2px; padding-right: 2px;" class="fa fa-phone-square" aria-hidden="true"></i> Contratar servicio</a>
+                        <hr style="margin-top: 5px; margin-bottom: 0px; max-width: 200px;">
+                    </div>
+                    <a id="aFB" href="#"><span class="hb hb-xms spin"><i class="fa fa-facebook"></i></span></a>
+                    <a id="aTwitter" href="#"><span class="hb hb-xms spin"><i class="fa fa-twitter"></i></span></a>
+                    <a id="aYouTube" href="#"><span class="hb hb-xms spin"><i class="fa fa-youtube"></i></span></a>
+                </div>
+
+            </div>
+            <!-- /content -->
+
+            <div class="ui-footer ui-bar-inherit ui-footer-fixed slideup" role="contentinfo" data-role="footer" data-position="fixed" style="padding-bottom: 0px;">
+            </div>
+        </div>
+
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="pag3" class="wrapper jsc-sidebar-content jsc-sidebar-pulled" data-page-id="news">
+
+            <div data-role="header">
+                <div id="titleHeader" class="text-center" style="font-size: 17px; font-family: 'Open Sans','Helvetica Neue','Helvetica,Arial,sans-serif' !important;">
+                    <a class="openerMenu" href="#" style="width: 100%;">
+                        <div class="burger-menu">
+                            <div class="burger-click-region">
+                                <span class="burger-menu-piece"></span>
+                                <span class="burger-menu-piece"></span>
+                                <span class="burger-menu-piece"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <span style="color: white; text-shadow: 0px 1px 0px rgb(1, 82, 162);">
+                        CONTROL GPS
+                    </span>
+                </div>
+                <div id="searchHeader" class="text-center" style="font-size: 17px; display: none;">
+                    <a class="openerMenu" href="#" style="width: 100%;">
+                        <div class="burger-menu">
+                            <div class="burger-click-region">
+                                <span class="burger-menu-piece"></span>
+                                <span class="burger-menu-piece"></span>
+                                <span class="burger-menu-piece"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <span style="color: white; text-shadow: 0px 1px 0px rgb(1, 82, 162);">
+                        <div id="formSearch" class="input-group form-search" style="width: 85%;margin: 0 auto;margin-left: 42px;margin-top: -3px;">
+                            <input id="inputSearch" class="form-control search-query" style="height: 27px;" type="text">
+                            <span class="input-group-btn">
+                                <button id="btnSearch" class="btn btn-primary" data-type="last" style="height: 27px;padding: 0px 12px;" onclick="search();"> <span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 13px;"></span></button>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <!-- /header -->
+            <div role="main" class="ui-content" style="padding: 0px;">
+                <div class="bm">
+                    <div class="bm-content">
+                        <div id="news" class="current-sub-page">
+                            <p id="noticesTitle" class="hidden" style="margin-bottom: 10px; margin-top: 15px; text-transform: none; font-size: 13px; margin-left: 14px; font-weight: bold; color: rgb(88, 97, 110);">Noticias</p>
+
+                            <div class="panel-group panel-group-lists collapse in" id="notices">
+                                <div class="text-center"><img style="" src="img/preloader.gif" alt=""> </div>
+                            </div>
+
+                            <div style="position: fixed; bottom: 0px; margin-bottom: 45px; width: 100%;" class="container-fluid">
+                                <button id="btnManageFleet" class="btn btn-block">
+                                    <div style="padding-left: 5px;" class="col-xs-1">
+                                        <i style="" class="fa fa-car" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-10" style="">
+                                        GESTIONAR FLOTA
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden" id="licence_plates_loader">
+                            <div class="text-center"><img style="" src="img/preloader.gif" alt=""> </div>
+                        </div>
+                        <div id="licence_plates" style="display: none;">
+                            <div class="text-center"><img style="" src="img/preloader.gif" alt=""> </div>
+                        </div>
+                        <div id="videos" style="display: none;">
+                            <div class="text-center"><img style="" src="img/preloader.gif" alt=""> </div>
+                        </div>
+                        <div id="login" style="display: none;">
+                            <div class="text-center"><img style="" src="img/preloader.gif" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+            <div class="ui-footer ui-bar-inherit ui-footer-fixed slideup" role="contentinfo" data-role="footer" data-position="fixed" style="padding-bottom: 0px; border: medium none;">
+                <button id="btnSupport" class="btn btn-default btn-block"><i style="padding-left: 5px; padding-right: 5px;" class="fa fa-phone" aria-hidden="true"></i> SOPORTE TECNICO</button>
+            </div>
+        </div>
+
+        <div class="sidebar jsc-sidebar hidden" id="jsi-nav" data-sidebar-options="">
+            <img src="img/logo_gps.png" alt="" style="width: 100%;height: auto;margin: 0 auto;padding: 15px;">
+            <ul id="main-menu" class="sidebar-list">
+                <li><a href="#" data-action="open-page" data-target-page="news" class="current"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Noticias</a></li>
+                <li><a href="#" data-action="open-page" data-target-page="licence_plates"><i class="fa fa-list-alt" aria-hidden="true"></i> Matrículas</a></li>
+                <li><a href="#" data-action="open-page" data-target-page="videos"><i class="fa fa-video-camera" aria-hidden="true"></i> Videotutoriales</a></li>
+                <li><a href="#" data-action="open-page" data-target-page="login"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar sesión</a></li>
+            </ul>
+        </div>
+
+        <div id="containerRecoverPassword" style="display: none;" style="background-color: rgb(249, 249, 249); padding-top: 15px; padding-bottom: 15px;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background-color: rgb(249, 249, 249); box-shadow: none;">
+                    <p style="margin-top: -9px;" class="text-right"><a id="btnHideContainerRecoverPassword" style="margin-right: 10px;" href="#"><i class="fa fa-times" style="font-size:20px;" aria-hidden="true"></i></a></p>
+
+                    <p style="margin-bottom: 10px; margin-top: 15px; text-transform: none; font-size: 14px;" class="text-center">Recuperar contraseña</p>
+
+                    <div style="padding: 14px;" class="form-horizontal">
+                        <input id="mailRecoverPassword" placeholder="Correo electronico" class="form-control" type="text">
+
+                        <button id="btnRecoverPasswordAction" style="margin-top: 20px;" class="btn btn-primary btn-block" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="containerViewVideo" style="display: none;" style="background-color: rgb(249, 249, 249); padding-top: 15px; padding-bottom: 15px;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background-color: rgb(249, 249, 249); box-shadow: none;">
+                    <p class="text-right"><a id="btnHideContainerViewVideo" style="margin-right: 10px;" href="#"><i class="fa fa-times" aria-hidden="true"></i></a></p>
+
+                    <p style="margin-bottom: 10px; margin-top: 15px; text-transform: none; font-size: 14px; font-weight: bold;" class="text-center" id="videoTitle"></p>
+
+                    <div style="padding: 14px;">
+
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe id="videoFrame" class="embed-responsive-item" src="" style="background: black;"></iframe>
+                        </div>
+
+                    </div>
+
+                    <p style="margin-bottom: 10px; margin-top: 5px; text-transform: none; font-size: 14px;" class="text-center" id="videoDescription"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="containerViewLicencePlate" style="display: none;" style="background-color: rgb(249, 249, 249); padding-top: 15px; padding-bottom: 15px;">
+            <div class="modal-dialog modal-lg" style="min-height: 320px;padding-left: 5px;padding-right: 5px;padding-top: 1px;">
+                <div class="modal-content" style="background-color: rgb(249, 249, 249); box-shadow: none;min-height: 320px;">
+                    <p class="text-right" style="margin-top: 8px;"><a id="btnHideContainerViewLicencePlate" style="margin-right: 10px;" href="#"><i class="fa fa-times" aria-hidden="true"></i></a></p>
+
+                    <p style="margin-bottom: 10px; margin-top: 15px; text-transform: none; font-size: 14px;font-weight: bold;" class="text-center" id="licencePlateTitle">FM1110</p>
+
+                    <p style="text-transform: none;color: #515151;font-size: 13px;font-weight: 700;border-bottom: 1px solid #e1e1e1;border-bottom-style: dotted;padding-left: 5px;margin-top: 11px;">Información</p>
+
+                    <div class="form-horizontal" style="text-transform: none;margin-left: 5px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <p for="matricula" style="font-size: 13px;font-weight: bold;color: #636363;margin-bottom: 6px;" class="col-md-4 col-sm-4 col-xs-4">Matrícula:</p>
+                            <p style="padding-top: 0;padding-left: 0;padding-bottom: 0;margin-bottom: 6px;" class="col-md-8 col-sm-8 col-xs-8"><span id="infoMatriculaPlateName"></span></p>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <p for="email" style="font-size: 13px;font-weight: bold;color: #636363;margin-bottom: 6px;" class="col-md-4 col-sm-4 col-xs-4">Licencia:</p>
+                            <p style="padding-top: 0;padding-left: 0;padding-bottom: 0;margin-bottom: 6px;" class="col-md-8 col-sm-8 col-xs-8"><span id="infoLicencePlateName"></span></p>
+                        </div>
+                        <div id="fgPhone" class="form-group" style="margin-bottom: 0;">
+                            <p for="email" style="font-size: 13px;font-weight: bold;color: #636363;margin-bottom: 6px;" class="col-md-4 col-sm-4 col-xs-4">N. teléfono:</p>
+                            <p style="padding-top: 0;padding-left: 0;padding-bottom: 0;margin-bottom: 6px;" class="col-md-8 col-sm-8 col-xs-8"><span id="infoLicencePlateNumber"></span></p>
+                        </div>
+                        <div id="fgInstallation" class="form-group" style="margin-bottom: 0;">
+                            <p for="email" style="font-size: 13px;font-weight: bold;color: #636363;margin-bottom: 6px;" class="col-md-4 col-sm-4 col-xs-4">Instalación:</p>
+                            <p style="padding-top: 0;padding-left: 0;padding-bottom: 0;margin-bottom: 6px;" class="col-md-8 col-sm-8 col-xs-8"><span id="infoLicencePlateInstallationPlace"></span> <a id="infoLicencePlateModifyInstallationPlace" href="#" class="pull-right" style="margin-right: 4px;"><i class="fa fa-pencil" aria-hidden="true"></i> Modificar</a></p>
+                        </div>
+                    </div>
+
+                    <p style="text-transform: none;color: #515151;font-size: 13px;font-weight: 700;margin-top: 11px;border-bottom: 1px solid #e1e1e1;border-bottom-style: dotted;padding-left: 5px;">Acciones</p>
+
+                    <div id="deviceActions">
+                        <div id="ibuttonActions" class="col-md-8 col-sm-8 col-xs-12" style="padding: 0;">
+                            <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
+                                <button type="button" class="btn btn-success btn-block" style="font-size: 12px;margin-bottom: 4px; width: 98.3%;" id="btnPowerOn"><i class="fa fa-refresh"></i> ON ibutton</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
+                                <button type="button" class="btn btn-danger btn-block pull-right" style="font-size: 12px;margin-bottom: 4px; width: 98.3%;" id="btnPowerOff"><i class="fa fa-refresh"></i> OFF ibutton</button>
+                            </div>
+                        </div>
+                        <div id="gpsActions" class="col-md-4 col-sm-4 col-xs-12" style="padding: 0;">
+                            <button type="button" class="btn btn-primary btn-block" style="font-size: 12px;margin-bottom: 4px;" id="btnRebootGPS"><i class="fa fa-refresh"></i> Reiniciar GPS</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="plugins/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="plugins/alertifyjs/alertify.min.js"></script>
+        <script type="text/javascript" src="plugins/social-hexagon/js/hexagons.min.js"></script>
+        <script type="text/javascript" src="plugins/bootflat/js/icheck.min.js"></script>
+        <script type="text/javascript" src="plugins/bootflat/js/jquery.fs.selecter.min.js"></script>
+        <script type="text/javascript" src="plugins/bootflat/js/jquery.fs.stepper.min.js"></script>
+        <script type="text/javascript" src="plugins/sidebar/sidebar.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+           app.initialize();
+        </script>
+    </body>
+
+</html>
